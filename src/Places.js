@@ -71,7 +71,7 @@ const Places = () => {
   const searchCity = async () => {
     setCheck(true);
     const response = await axios.get(
-      `https://api.opencagedata.com/geocode/v1/json?q=${city}&key=067a2d388af24f3ab6f828d056212a99`
+      `https://api.opencagedata.com/geocode/v1/json?q=${city}&key=${process.env.REACT_APP_KEY}`
     );
     console.log(response.data.results[0]);
     if (response.data.results[0]) {
@@ -116,7 +116,7 @@ const Places = () => {
     updatedRows[index].check = true;
 
     const response = await axios.get(
-      `https://api.opencagedata.com/geocode/v1/json?q=${updatedRows[index].name}&key=067a2d388af24f3ab6f828d056212a99`
+      `https://api.opencagedata.com/geocode/v1/json?q=${updatedRows[index].name}&key=${process.env.REACT_APP_KEY}`
     );
     //  console.log(response.data.results[0].geometry.lng);
     if (response.data.results[0]) {
@@ -209,7 +209,6 @@ const Places = () => {
 
     console.log(updatedNames);
 
-    const apiKey = "5b3ce3597851110001cf624830ea478c34e349dfa982fe22c01befdd"; // Replace with your ORS API key
     const endpoint = "https://api.openrouteservice.org/v2/matrix/driving-car";
     console.log(updatedAllcoords);
     try {
@@ -220,7 +219,7 @@ const Places = () => {
         },
         {
           headers: {
-            Authorization: apiKey,
+            Authorization: process.env.REACT_APP_KEY_TWO,
             "Content-Type": "application/json",
           },
         }

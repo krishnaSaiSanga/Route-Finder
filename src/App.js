@@ -1,9 +1,8 @@
-import { useRef, Suspense, lazy } from "react";
+import { useRef } from "react";
 import "./App.css";
-
-const Home = lazy(() => import("./Home"));
-const Details = lazy(() => import("./Details"));
-const Places = lazy(() => import("./Places"));
+import Home from "./Home";
+import Details from "./Details";
+import Places from "./Places";
 
 function App() {
   const placesRef = useRef(null);
@@ -14,16 +13,12 @@ function App() {
 
   return (
     <div className="App">
-      <Suspense fallback={<div>Loading...</div>}>
-        <Home scrollToPlaces={scrollToPlaces} />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Details />
-      </Suspense>
+      <Home scrollToPlaces={scrollToPlaces} />
+
+      <Details />
+
       <div ref={placesRef} id="places">
-        <Suspense fallback={<div>Loading...</div>}>
-          <Places />
-        </Suspense>
+        <Places />
       </div>
     </div>
   );
