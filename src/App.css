@@ -5,7 +5,7 @@
 
 .Home {
   flex: 1;
-  height: 100vh;
+  height: 130vh;
   width: 100%;
   background: url(./Images/marita-kavelashvili-ugnrXk1129g-unsplash.jpg);
   background-repeat: no-repeat;
@@ -86,7 +86,7 @@
 }
 .matter {
   flex: 1;
-  height: 100vh;
+  height: 130vh;
   width: 100%;
   background: url(./Images/IMG_20240727_013316.png);
   background-size: cover;
@@ -151,7 +151,7 @@ img {
   background-position: center;
   background-size: cover;
   background-color: #e4cda6;
-  height: 100vh;
+  height: 130vh;
   width: 100%;
 }
 
