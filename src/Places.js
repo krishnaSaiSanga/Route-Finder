@@ -194,6 +194,7 @@ const Places = () => {
       }
     } else {
       updatedRows[index].color = false;
+      setRows(updatedRows);
     }
   };
 
