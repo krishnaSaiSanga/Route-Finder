@@ -21,10 +21,11 @@ const matter = () => {
               1. Make a list of places that you would like to visit.
             </div>
             <div className="steps-points">
-              2. Enter the starting point(the place from where you are about to
-              start).
+              2. Enter the starting point and <b>click on Search button</b>.
             </div>
-            <div className="steps-points">3. Enter all the other places</div>
+            <div className="steps-points">
+              3. Enter all the other places and <b>click on Search button</b>
+            </div>
             <div className="steps-points">4. Click on Find Route button</div>
             <div></div>
           </div>
