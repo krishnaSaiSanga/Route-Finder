@@ -240,7 +240,7 @@ const Places = () => {
         <div className="Places-headding">Optimize your route</div>
         <div className="Places-box">
           {GetRoute ? (
-            <div className="Places-entry card">
+            <div className="Places-entry">
               <div id="startfrom">Start From:</div>
               <div className="Places-entry-data">
                 <input
