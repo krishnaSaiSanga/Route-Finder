@@ -1,3 +1,12 @@
+-------------------------------------------------
+-> Applied Dijkstra’s shortest path algorithm to help the travelers for finding the shortest route to travel from source
+covering all the desired locations in a given road network.
+------------------------------------------------
+-> Achieved the shortest path by taking real-time traffic conditions, distance and travel duration between the locations
+as constraints to provide users with a practical solution for fuel saving and travel time reduction.
+-----------------------------------------------
+-> Utilized React Js, javascript, REST api’s, HTML and CSS to achieve these results.
+---------------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
